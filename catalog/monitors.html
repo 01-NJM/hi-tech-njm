@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мониторы</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+  <nav>
+    <div class="logo">HI-TECH NJM</div>
+    <div class="nav-links">
+      <a href="../index.html">Главная</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Каталог</a>
+        <div class="dropdown-content">
+          <a href="systemblocks.html">Системные блоки</a>
+          <a href="monoblocks.html">Моноблоки</a>
+          <a href="notebooks.html">Ноутбуки</a>
+          <a href="monitors.html">Мониторы</a>
+           <a href="keyboards.html">Клавиатуры</a>
+          <a href="mice.html">Мыши</a>
+          <a href="boards.html">Интерактивные доски</a>
+        </div>
+      </div>
+      <a href="../about.html">О компании</a>
+      <a href="../contact.html"> Контакты </a>
+    </div>
+  </nav>
+
+  <h2 class="section-title">Мониторы Hi‑Tech NJM</h2>
+  <div class="products-grid">
+    <!-- Карточки мониторов -->
+    <!-- Ниже 10 штук -->
+    <div class="product-card" onclick="openModal('mn1')">
+      <img src="../images/monitor1.png" alt="Монитор 1">
+      <h3>Монитор NJM 1</h3>
+      <p>23.8" Full HD / IPS / 75Hz</p>
+    </div>
+    <div class="product-card" onclick="openModal('mn2')">
+      <img src="../images/monitor2.jpg" alt="Монитор 2">
+      <h3>Монитор NJM 2</h3>
+      <p>27" QHD / 144Hz / HDR</p>
+    </div>
+    <div class="product-card" onclick="openModal('mn3')">
+      <img src="../images/monitor3.jpg" alt="Монитор 3">
+      <h3>Монитор NJM 3</h3>
+      <p>24" Full HD / 60Hz / TN</p>
+    </div>
+    <div class="product-card" onclick="openModal('mn4')">
+      <img src="../images/monitor4.jpg" alt="Монитор 4">
+      <h3>Монитор NJM 4</h3>
+      <p>34" UWQHD / 120Hz / Curved</p>
+    </div>
+    <div class="product-card" onclick="openModal('mn5')">
+      <img src="../images/monitor5.jpg" alt="Монитор 5">
+      <h3>Монитор NJM 5</h3>
+      <p>22" Full HD / IPS / 75Hz</p>
+    </div>
+    <div class="product-card" onclick="openModal('mn6')">
+      <img src="../images/monitor6.jpg" alt="Монитор 6">
+      <h3>Монитор NJM 6</h3>
+      <p>27" 4K UHD / HDR10</p>
+    </div>
+    <div class="product-card" onclick="openModal('mn7')">
+      <img src="../images/monitor7.jpg" alt="Монитор 7">
+      <h3>Монитор NJM 7</h3>
+      <p>24" Full HD / 165Hz / Gaming</p>
+    </div>
+    <div class="product-card" onclick="openModal('mn8')">
+      <img src="../images/monitor8.jpg" alt="Монитор 8">
+      <h3>Монитор NJM 8</h3>
+      <p>32" QHD / 75Hz / VA</p>
+    </div>
+    <div class="product-card" onclick="openModal('mn9')">
+      <img src="../images/monitor9.jpg" alt="Монитор 9">
+      <h3>Монитор NJM 9</h3>
+      <p>19.5" HD+ / TN / 60Hz</p>
+    </div>
+    <div class="product-card" onclick="openModal('mn10')">
+      <img src="../images/monitor10.jpg" alt="Монитор 10">
+      <h3>Монитор NJM 10</h3>
+      <p>29" UltraWide / 100Hz</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-mn1">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('mn1')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-mn1" src="../images/monitor1.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/monitor1.png" onclick="changeMainImage('mn1', '../images/monitor1.png')">
+      <img src="../images/monitor1_1.jpg" onclick="changeMainImage('mn1', '../images/monitor1_1.jpg')">
+      <img src="../images/monitor1_2.jpg" onclick="changeMainImage('mn1', '../images/monitor1_2.jpg')">
+      <img src="../images/monitor1_3.jpg" onclick="changeMainImage('mn1', '../images/monitor1_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 125 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Экран көлемі: 27 дюйм</li>
+        <li>Шешімі: 2560×1440 (QHD)</li>
+        <li>Матрица түрі: IPS</li>
+        <li>Жаңарту жиілігі: 75 Гц</li>
+        <li>Порттар: HDMI, DisplayPort</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-mn2">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('mn2')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-mn2" src="../images/monitor2.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/monitor2.jpg" onclick="changeMainImage('mn2', '../images/monitor2.jpg')">
+      <img src="../images/monitor2_1.jpg" onclick="changeMainImage('mn2', '../images/monitor2_1.jpg')">
+      <img src="../images/monitor2_2.jpg" onclick="changeMainImage('mn2', '../images/monitor2_2.jpg')">
+      <img src="../images/monitor2_3.jpg" onclick="changeMainImage('mn2', '../images/monitor2_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 98 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Экран көлемі: 24 дюйм</li>
+        <li>Шешімі: 1920×1080 (Full HD)</li>
+        <li>Матрица түрі: VA</li>
+        <li>Жаңарту жиілігі: 75 Гц</li>
+        <li>Жауабы: 5 мс</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-mn3">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('mn3')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-mn3" src="../images/monitor3.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/monitor3.jpg" onclick="changeMainImage('mn3', '../images/monitor3.jpg')">
+      <img src="../images/monitor3_1.jpg" onclick="changeMainImage('mn3', '../images/monitor3_1.jpg')">
+      <img src="../images/monitor3_2.jpg" onclick="changeMainImage('mn3', '../images/monitor3_2.jpg')">
+      <img src="../images/monitor3_3.jpg" onclick="changeMainImage('mn3', '../images/monitor3_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 145 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Экран көлемі: 32 дюйм</li>
+        <li>Шешімі: 2560×1440 (QHD)</li>
+        <li>Матрица түрі: IPS</li>
+        <li>Жаңарту жиілігі: 144 Гц</li>
+        <li>HDR қолдауы: Иә</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal-mn4">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('mn4')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-mn4" src="../images/monitor4.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/monitor4.jpg" onclick="changeMainImage('mn4', '../images/monitor4.jpg')">
+      <img src="../images/monitor4_1.jpg" onclick="changeMainImage('mn4', '../images/monitor4_1.jpg')">
+      <img src="../images/monitor4_2.jpg" onclick="changeMainImage('mn4', '../images/monitor4_2.jpg')">
+      <img src="../images/monitor4_3.jpg" onclick="changeMainImage('mn4', '../images/monitor4_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 112 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Экран көлемі: 27 дюйм</li>
+        <li>Шешімі: 1920×1080 (Full HD)</li>
+        <li>Матрица түрі: TN</li>
+        <li>Жаңарту жиілігі: 75 Гц</li>
+        <li>Салмағы: 3.5 кг</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-mn5">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('mn5')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-mn5" src="../images/monitor5.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/monitor5.jpg" onclick="changeMainImage('mn5', '../images/monitor5.jpg')">
+      <img src="../images/monitor5_1.jpg" onclick="changeMainImage('mn5', '../images/monitor5_1.jpg')">
+      <img src="../images/monitor5_2.jpg" onclick="changeMainImage('mn5', '../images/monitor5_2.jpg')">
+      <img src="../images/monitor5_3.jpg" onclick="changeMainImage('mn5', '../images/monitor5_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 87 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Экран көлемі: 22 дюйм</li>
+        <li>Шешімі: 1920×1080</li>
+        <li>Жауап уақыты: 4 мс</li>
+        <li>Жиілік: 60 Гц</li>
+        <li>Интерфейстер: VGA, HDMI</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-mn6">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('mn6')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-mn6" src="../images/monitor6.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/monitor6.jpg" onclick="changeMainImage('mn6', '../images/monitor6.jpg')">
+      <img src="../images/monitor6_1.jpg" onclick="changeMainImage('mn6', '../images/monitor6_1.jpg')">
+      <img src="../images/monitor6_2.jpg" onclick="changeMainImage('mn6', '../images/monitor6_2.jpg')">
+      <img src="../images/monitor6_3.jpg" onclick="changeMainImage('mn6', '../images/monitor6_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 120 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Экран көлемі: 24 дюйм</li>
+        <li>Шешімі: 1920×1080</li>
+        <li>Матрица түрі: IPS</li>
+        <li>Жаңарту жиілігі: 100 Гц</li>
+        <li>Салмақ: 3.2 кг</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="modal" id="modal-mn7">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('mn7')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-mn7" src="../images/monitor7.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/monitor7.jpg" onclick="changeMainImage('mn7', '../images/monitor7.jpg')">
+      <img src="../images/monitor7_1.jpg" onclick="changeMainImage('mn7', '../images/monitor7_1.jpg')">
+      <img src="../images/monitor7_2.jpg" onclick="changeMainImage('mn7', '../images/monitor7_2.jpg')">
+      <img src="../images/monitor7_3.jpg" onclick="changeMainImage('mn7', '../images/monitor7_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 132 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Экран көлемі: 27 дюйм</li>
+        <li>Шешімі: 2560×1440</li>
+        <li>Матрица: IPS</li>
+        <li>HDR10: Қолдайды</li>
+        <li>Жиілік: 100 Гц</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-mn8">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('mn8')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-mn8" src="../images/monitor8.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/monitor8.jpg" onclick="changeMainImage('mn8', '../images/monitor8.jpg')">
+      <img src="../images/monitor8_1.jpg" onclick="changeMainImage('mn8', '../images/monitor8_1.jpg')">
+      <img src="../images/monitor8_2.jpg" onclick="changeMainImage('mn8', '../images/monitor8_2.jpg')">
+      <img src="../images/monitor8_3.jpg" onclick="changeMainImage('mn8', '../images/monitor8_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 175 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Экран көлемі: 34" ультра-кең</li>
+        <li>Шешімі: 3440×1440</li>
+        <li>Жаңарту жиілігі: 144 Гц</li>
+        <li>Кривизна: 1500R</li>
+        <li>FreeSync / G-Sync қолдайды</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-mn9">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('mn9')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-mn9" src="../images/monitor9.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/monitor9.jpg" onclick="changeMainImage('mn9', '../images/monitor9.jpg')">
+      <img src="../images/monitor9_1.jpg" onclick="changeMainImage('mn9', '../images/monitor9_1.jpg')">
+      <img src="../images/monitor9_2.jpg" onclick="changeMainImage('mn9', '../images/monitor9_2.jpg')">
+      <img src="../images/monitor9_3.jpg" onclick="changeMainImage('mn9', '../images/monitor9_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 150 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Экран: 29 дюйм</li>
+        <li>Шешімі: 2560×1080</li>
+        <li>Формат: 21:9</li>
+        <li>HDR: Иә</li>
+        <li>Интерфейс: USB-C</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-mn10">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('mn10')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-mn10" src="../images/monitor10.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/monitor10.jpg" onclick="changeMainImage('mn10', '../images/monitor10.jpg')">
+      <img src="../images/monitor10_1.jpg" onclick="changeMainImage('mn10', '../images/monitor10_1.jpg')">
+      <img src="../images/monitor10_2.jpg" onclick="changeMainImage('mn10', '../images/monitor10_2.jpg')">
+      <img src="../images/monitor10_3.jpg" onclick="changeMainImage('mn10', '../images/monitor10_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 225 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Экран: 32" 4K UHD</li>
+        <li>Шешімі: 3840×2160</li>
+        <li>HDR10 қолдауы</li>
+        <li>Жиілік: 60 Гц</li>
+        <li>USB Hub: 3x USB 3.0</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  <script>
+    function openModal(id) {
+      document.getElementById('modal-' + id).style.display = 'block';
+    }
+    function closeModal(id) {
+      document.getElementById('modal-' + id).style.display = 'none';
+    }
+    function changeMainImage(id, src) {
+      document.getElementById('main-image-' + id).src = src;
+    }
+  </script>
+</body>
+</html>

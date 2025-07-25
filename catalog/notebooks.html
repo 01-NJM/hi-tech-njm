@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Ноутбуки</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+  <nav>
+    <div class="logo">HI-TECH NJM</div>
+    <div class="nav-links">
+      <a href="../index.html">Главная</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Каталог</a>
+        <div class="dropdown-content">
+          <a href="systemblocks.html">Системные блоки</a>
+          <a href="monoblocks.html">Моноблоки</a>
+          <a href="notebooks.html">Ноутбуки</a>
+          <a href="monitors.html">Мониторы</a>
+           <a href="keyboards.html">Клавиатуры</a>
+          <a href="mice.html">Мыши</a>
+          <a href="boards.html">Интерактивные доски</a>
+        </div>
+      </div>
+      <a href="../about.html">О компании</a>
+      <a href="../contact.html"> Контакты </a>
+    </div>
+  </nav>
+
+  <h2 class="section-title">Ноутбуки Hi‑Tech NJM</h2>
+  <div class="products-grid">
+    <!-- Пример карточек ноутбуков -->
+    <!-- Здесь вы добавите 10 блоков, как делали с моноблоками -->
+    <!-- Ниже приведен один пример -->
+    <div class="product-card" onclick="openModal('n1')">
+      <img src="../images/note1.jpg" alt="Ноутбук 1">
+      <h3>Ноутбук NJM </h3>
+      <p>Intel i5 / 8GB / 256GB SSD</p>
+    </div>
+    <div class="product-card" onclick="openModal('n2')">
+  <img src="../images/note2.jpg" alt="Ноутбук 2">
+  <h3>Ноутбук NJM </h3>
+  <p>Ryzen 5 / 16GB / 512GB SSD</p>
+</div>
+
+<div class="product-card" onclick="openModal('n3')">
+  <img src="../images/note3.jpg" alt="Ноутбук 3">
+  <h3>Ноутбук NJM </h3>
+  <p>Intel i7 / 16GB / 1TB SSD</p>
+</div>
+
+<div class="product-card" onclick="openModal('n4')">
+  <img src="../images/note4.jpg" alt="Ноутбук 4">
+  <h3>Ноутбук NJM </h3>
+  <p>Intel i3 / 8GB / 256GB SSD</p>
+</div>
+
+<div class="product-card" onclick="openModal('n5')">
+  <img src="../images/note5.jpg" alt="Ноутбук 5">
+  <h3>Ноутбук NJM </h3>
+  <p>Ryzen 3 / 8GB / 512GB SSD</p>
+</div>
+
+<div class="product-card" onclick="openModal('n6')">
+  <img src="../images/note6.jpg" alt="Ноутбук 6">
+  <h3>Ноутбук NJM </h3>
+  <p>Intel i5 / 8GB / 512GB SSD</p>
+</div>
+
+<div class="product-card" onclick="openModal('n7')">
+  <img src="../images/note7.jpg" alt="Ноутбук 7">
+  <h3>Ноутбук NJM </h3>
+  <p>Ryzen 7 / 16GB / 1TB SSD</p>
+</div>
+
+<div class="product-card" onclick="openModal('n8')">
+  <img src="../images/note8.jpg" alt="Ноутбук 8">
+  <h3>Ноутбук NJM </h3>
+  <p>Intel i5 / 8GB / 512GB SSD</p>
+</div>
+
+<div class="product-card" onclick="openModal('n9')">
+  <img src="../images/note9.jpg" alt="Ноутбук 9">
+  <h3>Ноутбук NJM </h3>
+  <p>Ryzen 5 / 8GB / 256GB SSD</p>
+</div>
+
+<div class="product-card" onclick="openModal('n10')">
+  <img src="../images/note10.jpg" alt="Ноутбук 10">
+  <h3>Ноутбук NJM </h3>
+  <p>Intel i7 / 16GB / 1TB SSD</p>
+</div>
+
+  </div>
+
+  <!-- Модальные окна -->
+  <div class="modal" id="modal-n1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('n1')">&times;</span>
+      <div class="main-image-container">
+        <img id="main-image-n1" src="../images/note1.jpg" class="main-img">
+      </div>
+      <div class="thumbs">
+        <img src="../images/note1.jpg" onclick="changeMainImage('n1', '../images/note1.jpg')">
+        <img src="../images/note1_1.jpg" onclick="changeMainImage('n1', '../images/note1_1.jpg')">
+        <img src="../images/note1_2.jpg" onclick="changeMainImage('n1', '../images/note1_2.jpg')">
+        <img src="../images/note1_3.jpg" onclick="changeMainImage('n1', '../images/note1_3.jpg')">
+      </div>
+      <p class="product-price"><strong>Бағасы:</strong> 280 000 ₸</p>
+      <div class="modal-description">
+        <ul>
+          <li>Процессор: Intel Core i5-1135G7</li>
+          <li>Жедел жады: 8GB</li>
+          <li>Жинақтауыш: 256GB SSD</li>
+          <li>Экран: 15.6" Full HD</li>
+          <li>Батарея: 6 сағат жұмыс</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-n2">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('n2')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-n2" src="../images/note2.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/note2.jpg" onclick="changeMainImage('n2', '../images/note2.jpg')">
+      <img src="../images/note2_1.jpg" onclick="changeMainImage('n2', '../images/note2_1.jpg')">
+      <img src="../images/note2_2.jpg" onclick="changeMainImage('n2', '../images/note2_2.jpg')">
+      <img src="../images/note2_3.jpg" onclick="changeMainImage('n2', '../images/note2_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 310 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: AMD Ryzen 5 5500U</li>
+        <li>Жедел жады: 16GB</li>
+        <li>Жинақтауыш: 512GB SSD</li>
+        <li>Экран: 15.6" Full HD IPS</li>
+        <li>Батарея: 8 сағат жұмыс</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="modal" id="modal-n3">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('n3')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-n3" src="../images/note3.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/note3.jpg" onclick="changeMainImage('n3', '../images/note3.jpg')">
+      <img src="../images/note3_1.jpg" onclick="changeMainImage('n3', '../images/note3_1.jpg')">
+      <img src="../images/note3_2.jpg" onclick="changeMainImage('n3', '../images/note3_2.jpg')">
+      <img src="../images/note3_3.jpg" onclick="changeMainImage('n3', '../images/note3_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 350 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: Intel Core i7-1165G7</li>
+        <li>Жедел жады: 16GB</li>
+        <li>Жинақтауыш: 1TB SSD</li>
+        <li>Экран: 16" Full HD</li>
+        <li>Видеокарта: Intel Iris Xe</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-n4">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('n4')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-n4" src="../images/note4.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/note4.jpg" onclick="changeMainImage('n4', '../images/note4.jpg')">
+      <img src="../images/note4_1.jpg" onclick="changeMainImage('n4', '../images/note4_1.jpg')">
+      <img src="../images/note4_2.jpg" onclick="changeMainImage('n4', '../images/note4_2.jpg')">
+      <img src="../images/note4_3.jpg" onclick="changeMainImage('n4', '../images/note4_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 230 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: Intel Core i3-1115G4</li>
+        <li>Жедел жады: 8GB</li>
+        <li>Жинақтауыш: 256GB SSD</li>
+        <li>Экран: 14" Full HD</li>
+        <li>Батарея: 5 сағат жұмыс</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="modal" id="modal-n5">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('n5')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-n5" src="../images/note5.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/note5.jpg" onclick="changeMainImage('n5', '../images/note5.jpg')">
+      <img src="../images/note5_1.jpg" onclick="changeMainImage('n5', '../images/note5_1.jpg')">
+      <img src="../images/note5_2.jpg" onclick="changeMainImage('n5', '../images/note5_2.jpg')">
+      <img src="../images/note5_3.jpg" onclick="changeMainImage('n5', '../images/note5_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 265 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: AMD Ryzen 3 5300U</li>
+        <li>Жедел жады: 8GB</li>
+        <li>Жинақтауыш: 512GB SSD</li>
+        <li>Экран: 15.6" HD</li>
+        <li>Салмақ: 1.6 кг</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-n6">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('n6')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-n6" src="../images/note6.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/note6.jpg" onclick="changeMainImage('n6', '../images/note6.jpg')">
+      <img src="../images/note6_1.jpg" onclick="changeMainImage('n6', '../images/note6_1.jpg')">
+      <img src="../images/note6_2.jpg" onclick="changeMainImage('n6', '../images/note6_2.jpg')">
+      <img src="../images/note6_3.jpg" onclick="changeMainImage('n6', '../images/note6_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 295 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: Intel Core i5-1240P</li>
+        <li>Жедел жады: 8GB</li>
+        <li>Жинақтауыш: 512GB SSD</li>
+        <li>Экран: 15.6" Full HD</li>
+        <li>Видеокарта: Intel Iris Xe</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-n7">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('n7')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-n7" src="../images/note7.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/note7.jpg" onclick="changeMainImage('n7', '../images/note7.jpg')">
+      <img src="../images/note7_1.jpg" onclick="changeMainImage('n7', '../images/note7_1.jpg')">
+      <img src="../images/note7_2.jpg" onclick="changeMainImage('n7', '../images/note7_2.jpg')">
+      <img src="../images/note7_3.jpg" onclick="changeMainImage('n7', '../images/note7_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 375 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: AMD Ryzen 7 5800U</li>
+        <li>Жедел жады: 16GB</li>
+        <li>Жинақтауыш: 1TB SSD</li>
+        <li>Экран: 16.1" Full HD IPS</li>
+        <li>Салқындату: Dual Fan</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-n8">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('n8')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-n8" src="../images/note8.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/note8.jpg" onclick="changeMainImage('n8', '../images/note8.jpg')">
+      <img src="../images/note8_1.jpg" onclick="changeMainImage('n8', '../images/note8_1.jpg')">
+      <img src="../images/note8_2.jpg" onclick="changeMainImage('n8', '../images/note8_2.jpg')">
+      <img src="../images/note8_3.jpg" onclick="changeMainImage('n8', '../images/note8_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 265 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: Intel Core i5-1235U</li>
+        <li>Жедел жады: 8GB</li>
+        <li>Жинақтауыш: 512GB SSD</li>
+        <li>Экран: 14" Full HD</li>
+        <li>Батарея: 7 сағат жұмыс</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-n9">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('n9')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-n9" src="../images/note9.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/note9.jpg" onclick="changeMainImage('n9', '../images/note9.jpg')">
+      <img src="../images/note9_1.jpg" onclick="changeMainImage('n9', '../images/note9_1.jpg')">
+      <img src="../images/note9_2.jpg" onclick="changeMainImage('n9', '../images/note9_2.jpg')">
+      <img src="../images/note9_3.jpg" onclick="changeMainImage('n9', '../images/note9_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 240 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: AMD Ryzen 5 4500U</li>
+        <li>Жедел жады: 8GB</li>
+        <li>Жинақтауыш: 256GB SSD</li>
+        <li>Экран: 15.6" HD</li>
+        <li>Салмақ: 1.7 кг</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-n10">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('n10')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-n10" src="../images/note10.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/note10.jpg" onclick="changeMainImage('n10', '../images/note10.jpg')">
+      <img src="../images/note10_1.jpg" onclick="changeMainImage('n10', '../images/note10_1.jpg')">
+      <img src="../images/note10_2.jpg" onclick="changeMainImage('n10', '../images/note10_2.jpg')">
+      <img src="../images/note10_3.jpg" onclick="changeMainImage('n10', '../images/note10_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 420 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: Intel Core i7-1260P</li>
+        <li>Жедел жады: 16GB</li>
+        <li>Жинақтауыш: 1TB NVMe SSD</li>
+        <li>Экран: 16" IPS 2.5K</li>
+        <li>Батарея: 10 сағатқа дейін</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById('modal-' + id).style.display = 'block';
+    }
+    function closeModal(id) {
+      document.getElementById('modal-' + id).style.display = 'none';
+    }
+    function changeMainImage(id, src) {
+      document.getElementById('main-image-' + id).src = src;
+    }
+  </script>
+</body>
+</html>

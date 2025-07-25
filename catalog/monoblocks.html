@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Моноблоки</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+  <nav>
+    <div class="logo">HI-TECH NJM</div>
+    <div class="nav-links">
+      <a href="../index.html">Главная</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Каталог</a>
+        <div class="dropdown-content">
+          <a href="systemblocks.html">Системные блоки</a>
+          <a href="monoblocks.html">Моноблоки</a>
+          <a href="notebooks.html">Ноутбуки</a>
+          <a href="monitors.html">Мониторы</a>
+          <a href="keyboards.html">Клавиатуры</a>
+          <a href="mice.html">Мыши</a>
+          <a href="boards.html">Интерактивные доски</a>
+        </div>
+      </div>
+      <a href="../about.html">О компании</a>
+      <a href="../contact.html"> Контакты </a>
+    </div>
+  </nav>
+
+  <h2 class="section-title">Моноблоки Hi‑Tech NJM</h2>
+  <div class="products-grid">
+    <!-- Моноблоки карточкалары -->
+    <!-- Барлық 10 өнім осында болады -->
+    <!-- Мысалы, тек бір карточка көрсетем, қалғандарын ұқсас етіп толтырам -->
+    <div class="product-card" onclick="openModal('m1')">
+      <img src="../images/mono1.png" alt="Monoblock 1">
+      <h3>Моноблок NJM All‑in‑One </h3>
+      <p>Intel i3 / 8GB / 256GB SSD</p>
+    </div>
+
+    <div class="product-card" onclick="openModal('m2')">
+      <img src="../images/mono2.png" alt="Monoblock 2">
+      <h3>Моноблок NJM All‑in‑One</h3>
+      <p>Intel i5 / 16GB / 512GB SSD</p>
+    </div>
+
+    <div class="product-card" onclick="openModal('3')">
+      <img src="../images/mono3.png" alt="Monoblock 3">
+      <h3>Моноблок NJM All‑in‑One</h3>
+      <p>Ryzen 3 / 8GB / 256GB SSD</p>
+    </div>
+
+    <div class="product-card" onclick="openModal('4')">
+      <img src="../images/mono4.png" alt="Monoblock 4">
+      <h3>Моноблок NJM All‑in‑One</h3>
+      <p>Intel i7 / 32GB / 1TB SSD</p>
+    </div>
+
+    <div class="product-card" onclick="openModal('5')">
+      <img src="../images/mono5.png" alt="Monoblock 5">
+      <h3>Моноблок NJM All‑in‑One</h3>
+      <p>Intel i5 / 8GB / 512GB SSD</p>
+    </div>
+
+    <div class="product-card" onclick="openModal('6')">
+      <img src="../images/mono6.png" alt="Monoblock 6">
+      <h3>Моноблок NJM All‑in‑One</h3>
+      <p>Ryzen 5 / 16GB / 512GB SSD</p>
+    </div>
+
+    <div class="product-card" onclick="openModal('7')">
+      <img src="../images/mono7.png" alt="Monoblock 7">
+      <h3>Моноблок NJM All‑in‑One</h3>
+      <p>Intel i9 / 64GB / 2TB SSD</p>
+    </div>
+
+    <div class="product-card" onclick="openModal('8')">
+      <img src="../images/mono8.png" alt="Monoblock 8">
+      <h3>Моноблок NJM All‑in‑One</h3>
+      <p>Intel i5 / 8GB / 256GB SSD</p>
+    </div>
+
+    <div class="product-card" onclick="openModal('9')">
+      <img src="../images/mono9.png" alt="Monoblock 9">
+      <h3>Моноблок NJM All‑in‑One</h3>
+      <p>Ryzen 7 / 32GB / 1TB SSD</p>
+    </div>
+
+    <div class="product-card" onclick="openModal('10')">
+      <img src="../images/mono10.png" alt="Monoblock 10">
+      <h3>Моноблок NJM All‑in‑One</h3>
+      <p>Intel i7 / 16GB / 1TB SSD</p>
+    </div>
+  </div>
+
+  <!-- Модаль терезелер (мұнда барлық 10 өнімнің модалы болуы керек, тек біреуін мысал ретінде көрсетем) -->
+  <div class="modal" id="modal-m1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('m1')">&times;</span>
+      <div class="main-image-container">
+        <img id="main-image-m1" src="../images/mono1.png" class="main-img">
+      </div>
+      <div class="thumbs">
+        <img src="../images/mono1.png" onclick="changeMainImage('m1', '../images/mono1.png')">
+        <img src="../images/mono1_1.jpg" onclick="changeMainImage('m1', '../images/mono1_1.jpg')">
+        <img src="../images/mono1_2.png" onclick="changeMainImage('m1', '../images/mono1_2.png')">
+        <img src="../images/mono1_3.jpg" onclick="changeMainImage('m1', '../images/mono1_3.jpg')">
+      </div>
+      <p class="product-price"><strong>Бағасы:</strong> 290 000 ₸</p>
+      <div class="modal-description">
+        <ul>
+          <li>Процессор: Intel Core i5</li>
+          <li>Жедел жады: 8GB</li>
+          <li>Жинақтауыш: 256GB SSD</li>
+          <li>Дисплей: 23.8" Full HD</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Модаль 2 -->
+<div class="modal" id="modal-m2">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('m2')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-m2" src="../images/mono2.png" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/mono2.png" onclick="changeMainImage('m2', '../images/mono2.png')">
+      <img src="../images/mono2_1.jpg" onclick="changeMainImage('m2', '../images/mono2_1.jpg')">
+      <img src="../images/mono2_2.jpg" onclick="changeMainImage('m2', '../images/mono2_2.jpg')">
+      <img src="../images/mono2_3.jpg" onclick="changeMainImage('m2', '../images/mono2_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 340 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: AMD Ryzen 5</li>
+        <li>Жедел жады: 16GB</li>
+        <li>Жинақтауыш: 512GB SSD</li>
+        <li>Дисплей: 27" Full HD</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Модаль 3 -->
+<div class="modal" id="modal-3">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('3')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-3" src="../images/mono3.png" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/mono3.png" onclick="changeMainImage('3', '../images/mono3.png')">
+      <img src="../images/mono3_1.jpg" onclick="changeMainImage('3', '../images/mono3_1.jpg')">
+      <img src="../images/mono3_2.jpg" onclick="changeMainImage('3', '../images/mono3_2.jpg')">
+      <img src="../images/mono3_3.jpg" onclick="changeMainImage('3', '../images/mono3_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 185 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Intel Core i3 10100</li>
+        <li>4 ядра / 8 потоков</li>
+        <li>4GB DDR4 RAM</li>
+        <li>128GB SSD</li>
+        <li>21.5" Full HD экран</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Модаль 4 -->
+<div class="modal" id="modal-4">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('4')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-4" src="../images/mono4.png" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/mono4.png" onclick="changeMainImage('4', '../images/mono4.png')">
+      <img src="../images/mono4_1.jpg" onclick="changeMainImage('4', '../images/mono4_1.jpg')">
+      <img src="../images/mono4_2.jpg" onclick="changeMainImage('4', '../images/mono4_2.jpg')">
+      <img src="../images/mono4_3.jpg" onclick="changeMainImage('4', '../images/mono4_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 260 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Intel Core i5 10400</li>
+        <li>6 ядра / 12 потоков</li>
+        <li>8GB RAM</li>
+        <li>256GB SSD</li>
+        <li>23.8" Full HD экран</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Модаль 5 -->
+<div class="modal" id="modal-5">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('5')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-5" src="../images/mono5.png" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/mono5.png" onclick="changeMainImage('5', '../images/mono5.png')">
+      <img src="../images/mono5_1.jpg" onclick="changeMainImage('5', '../images/mono5_1.jpg')">
+      <img src="../images/mono5_2.jpg" onclick="changeMainImage('5', '../images/mono5_2.jpg')">
+      <img src="../images/mono5_3.jpg" onclick="changeMainImage('5', '../images/mono5_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 215 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>AMD Ryzen 3 3200U</li>
+        <li>2 ядра / 4 потока</li>
+        <li>8GB DDR4 RAM</li>
+        <li>256GB SSD</li>
+        <li>21.5" экран</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <!-- Модаль 6 -->
+<div class="modal" id="modal-6">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('6')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-6" src="../images/mono6.png" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/mono6.png" onclick="changeMainImage('6', '../images/mono6.png')">
+      <img src="../images/mono6_1.jpg" onclick="changeMainImage('6', '../images/mono6_1.jpg')">
+      <img src="../images/mono6_2.jpg" onclick="changeMainImage('6', '../images/mono6_2.jpg')">
+      <img src="../images/mono6_3.jpg" onclick="changeMainImage('6', '../images/mono6_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 270 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: Ryzen 5 4600U</li>
+        <li>Жедел жады: 16GB</li>
+        <li>Жинақтауыш: 512GB SSD</li>
+        <li>Экран: 24" Full HD</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-7">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('7')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-7" src="../images/mono7.png" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/mono7.png" onclick="changeMainImage('7', '../images/mono7.png')">
+      <img src="../images/mono7_1.jpg" onclick="changeMainImage('7', '../images/mono7_1.jpg')">
+      <img src="../images/mono7_2.jpg" onclick="changeMainImage('7', '../images/mono7_2.jpg')">
+      <img src="../images/mono7_3.jpg" onclick="changeMainImage('7', '../images/mono7_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 320 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: Intel Core i9</li>
+        <li>Жедел жады: 64GB</li>
+        <li>Жинақтауыш: 2TB SSD</li>
+        <li>Экран: 27" 4K UHD</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="modal" id="modal-8">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('8')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-8" src="../images/mono8.png" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/mono8.png" onclick="changeMainImage('8', '../images/mono8.png')">
+      <img src="../images/mono8_1.jpg" onclick="changeMainImage('8', '../images/mono8_1.jpg')">
+      <img src="../images/mono8_2.jpg" onclick="changeMainImage('8', '../images/mono8_2.jpg')">
+      <img src="../images/mono8_3.jpg" onclick="changeMainImage('8', '../images/mono8_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 280 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: Intel Core i5</li>
+        <li>Жедел жады: 8GB</li>
+        <li>Жинақтауыш: 256GB SSD</li>
+        <li>Экран: 23.8" Full HD</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="modal" id="modal-9">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('9')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-9" src="../images/mono9.png" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/mono9.png" onclick="changeMainImage('9', '../images/mono9.png')">
+      <img src="../images/mono9_1.jpg" onclick="changeMainImage('9', '../images/mono9_1.jpg')">
+      <img src="../images/mono9_2.jpg" onclick="changeMainImage('9', '../images/mono9_2.jpg')">
+      <img src="../images/mono9_3.jpg" onclick="changeMainImage('9', '../images/mono9_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 220 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: Ryzen 7 5700U</li>
+        <li>Жедел жады: 32GB</li>
+        <li>Жинақтауыш: 1TB SSD</li>
+        <li>Экран: 24" Full HD IPS</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <div class="modal" id="modal-10">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('10')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-10" src="../images/mono10.png" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/mono10.png" onclick="changeMainImage('10', '../images/mono10.png')">
+      <img src="../images/mono10_1.jpg" onclick="changeMainImage('10', '../images/mono10_1.jpg')">
+      <img src="../images/mono10_2.jpg" onclick="changeMainImage('10', '../images/mono10_2.jpg')">
+      <img src="../images/mono10_3.jpg" onclick="changeMainImage('10', '../images/mono10_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 400 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Процессор: AMD Ryzen 7 5700U</li>
+        <li>Жедел жады: 16GB</li>
+        <li>Жинақтауыш: 512GB NVMe SSD</li>
+        <li>Экран: 27" Full HD</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById('modal-' + id).style.display = 'block';
+    }
+    function closeModal(id) {
+      document.getElementById('modal-' + id).style.display = 'none';
+    }
+    function changeMainImage(id, src) {
+      document.getElementById('main-image-' + id).src = src;
+    }
+  </script>
+</body>
+</html>
+
+
+
+

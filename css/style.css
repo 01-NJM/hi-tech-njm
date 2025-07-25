@@ -1,0 +1,933 @@
+/* Навигация */
+nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  padding: 0 150px; /* Сол және оң жақтан отступ */
+}
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin-left: 300px;   /* 👈 Сол жақтан отступ */
+  margin-right: 40px;  /* 👈 Оң жақтан навигациядан ажырату */
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+}
+
+nav a:hover {
+  color: #00d8ff;
+}
+
+/* Логотип */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 30px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  z-index: 1000;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Показываем при наведении */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* === Dropdown menu === */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* ======= 1-СЕКЦИЯ: ФОН ТЕК ОСЫНДА ======= */
+.header-info {
+  position: relative;
+  background-image: url("../images/glav4.png"); /* өз суретіңізге қарай жолын түзетіңіз */
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: -200px; /* 👈 Суретті төмен жылжытады */
+  height: 650px;
+  color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* 👈 Мәтінді сол жаққа жылжытады */
+  padding-left: 5%; /* 👈 Сол жақтан отступ */
+}
+
+.header-info .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  max-width: 850px;
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
+
+.header-info h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.header-info span {
+  color: #00d8ff; /* Мысалы — ерекше түс беру */
+}
+
+.header-info p {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+
+
+/* ===============================
+   3-СЕКЦИЯ: ӨНІМДЕР ("Наши продукты")
+   =============================== */
+
+/* 🔲 Жалпы өнім секциясының стилі */
+.product-section {
+  background-color: #fff;
+  color: #000;
+  padding: 3rem 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.products-section h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  color: #111;
+  letter-spacing: 1px;
+}
+
+/* 🧾 Өнім атауы (ішкі тақырып) */
+.product-section h3 {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* 📦 Әр өнім қатары (мәтін мен сурет) */
+.product-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+/* 🔄 Кейбір өнімдерге: сурет солда, мәтін оңда */
+.product-section.reverse .product-row {
+  flex-direction: row-reverse;
+}
+
+/* ✍️ Өнім сипаттамасы */
+.product-text {
+  flex: 1;
+  min-width: 240px;
+}
+
+.product-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 0;
+}
+
+/* 🖼️ Өнім суреті */
+.product-image {
+  flex: 1;
+  min-width: 240px;
+  text-align: center;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 280px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* 1. Системный блок */
+.block .product-image img {
+  max-width: 450px;
+}
+
+/* 2. Моноблок */
+.monoblok .product-image img {
+  max-width: 480px;
+}
+
+/* 3. Клавиатура */
+.keyboard .product-image img {
+  max-width: 500px;
+}
+
+/* 4. Мышка */
+.mouse .product-image img {
+  max-width: 300px;
+}
+
+/* 5. Ноутбук */
+.laptop .product-image img {
+  max-width: 360px;
+}
+
+/* 🔹 Категория жазуы */
+.block .category-label {
+  font-size: 20px;
+  color: #888;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* 🔸 Өнім атауы */
+.block .product-text h3 {
+  font-size: 35px;
+  color: #111;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+/* 🔻 Сипаттама */
+.block .product-desc {
+  font-size: 20px;
+  color: #444;
+  line-height: 1.6;
+  text-align: center;
+}
+.block .product-row {
+  align-items: flex-start;
+}
+
+/* 🔹 Категория атауы — кішкентай, сұрлау */
+.monoblok .category-label {
+  font-size: 20px;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+/* 🔹 Негізгі атау — үлкен, жирный */
+.monoblok .product-text h3 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Сипаттама — қалыпты стиль */
+.monoblok .product-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #444;
+}
+.monoblok .product-row {
+  align-items: flex-start;
+}
+/* 🔹 Сурет өлшемі */
+.monoblok .product-image img {
+  max-width: 480px;
+}
+
+/* 🔹 Категория атауы */
+.keyboard .category-label {
+  font-size: 20px;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+/* 🔹 Негізгі атау */
+.keyboard .product-text h3 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Сипаттама */
+.keyboard .product-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.keyboard .product-row {
+  align-items: flex-start;
+}
+
+/* 🔹 Сурет өлшемі */
+.keyboard .product-image img {
+  max-width: 500px;
+  height: auto;
+}
+
+/* 🔹 Категория жазуы */
+.mouse .category-label {
+  font-size: 20px;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+/* 🔹 Негізгі атау */
+.mouse .product-text h3 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Сипаттама */
+.mouse .product-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.mouse .product-row {
+  align-items: flex-start;
+}
+/* 🔹 Сурет өлшемі */
+.mouse .product-image img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* 🔹 Категория жазуы */
+.laptop .category-label {
+  font-size: 20px;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+/* 🔹 Өнімнің атауы */
+.laptop .product-text h3 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Сипаттамасы */
+.laptop .product-text p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #444;
+}
+.laptop .product-row {
+  align-items: flex-start;
+}
+/* 🔹 Сурет өлшемі */
+.laptop .product-image img {
+  max-width: 460px;
+  height: auto;
+}
+
+
+/* 🔽 Арка шекара */
+.arc-divider {
+  width: 100%;
+  height: 100px;
+  background-color: #111; /* ⬅️ Сертификат секциясының түсі */
+  border-top-left-radius: 100% 50px;
+  border-top-right-radius: 100% 50px;
+  margin-top: -1px;
+}
+
+/* ======= 4-СЕКЦИЯ: CERTIFICATES ======= */
+.certificates-section {
+  background-color: #111;
+  color: #fff;
+  padding: 6rem 2rem;
+  min-height: 500px;
+}
+
+
+.cert-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cert-text {
+  padding-left: 40px;   /* 👈 Сол жақтан отступ */
+  padding-right: 20px;  /* 👉 Қаласаңыз, оңнан да */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+.cert-text .cert-subtitle {
+  font-size: 20px;
+  color: #aaa;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.cert-text h2 {
+  font-size: 37px;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+.cert-text ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cert-text li {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.cert-text li span {
+  display: inline-block;
+  color: #00ffcc;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Сертификаттағы сурет */
+.cert-image img {
+  width: 700px;
+  max-width: 100%;
+  height: auto;
+}
+.eac-images {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;   /* Тігінен орналастыру */
+  align-items: flex-end;    /* ОҢ ЖАҚҚА ТУРАЛАУ */
+  gap: 10px;
+}
+
+.eac-images img {
+  width: 150px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+
+
+.cert-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+/* ======= 5-СЕКЦИЯ: CONTACTS ======= */
+footer.site-footer {
+  background-color: #000066 !important;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  font-family: Calibri, sans-serif;
+}
+
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-column p,
+.footer-column a {
+  font-size: 14px;
+  color: #fff;
+  margin: 0.4rem 0;
+  text-decoration: none;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1); /* ақ иконкалар үшін */
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 2rem;
+  color: #ddd;
+}
+
+/* ===== О КОМПАНИИ СЕКЦИЯ ===== */
+/* === О компании секциясы === */
+.about-section {
+  background-color: #f5f5f5;
+  padding: 60px 20px;
+  color: #111;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Контакты секциясы ===== */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 300px;
+  padding-left: 70px; /* 🔸 Сол жақ отступ */
+  font-size: 25px;     /* 🔸 Мәтіннің өлшемі */
+  line-height: 1.6;
+}
+
+.contact-left h2,
+.contact-left h3 {
+  font-size: 30px;     /* 🔸 Тақырыптарды үлкейту */
+  margin-bottom: 15px;
+}
+
+.contact-left p {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-map {
+  flex: 1;
+  max-width: 600px; /* карта енін шектеу */
+  height: auto;
+  padding-left: 30px; /* сол жақтан бос орын */
+  margin-right: 120px; /* оң жақ отступ */
+}
+.contact-map iframe {
+  width: 100%;
+  height: 600px; /* карта биіктігі */
+  border-radius: 20px; /* бұрыштарын жұмырлау (қалауыңызша) */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* көлеңке */
+}
+.site-footer {
+  background-color: #004aad; /* Көк фон (қалауыңызша басқа көк тон қоя аласыз) */
+  text-align: center;        /* Мәтінді ортаға */
+  padding: 20px 0;           /* Жоғары/төмен отступ */
+}
+
+.site-footer p {
+  color: white;              /* Ақ мәтін */
+  font-size: 18px;           /* Мәтіннің размері */
+  margin: 0;                 /* Қосымша отступсыз */
+  font-weight: 500;          /* Салмақтырақ қаріп */
+}
+
+
+
+/* ===== каталог,системные блоки секциясы ===== */
+/* 📦 Өнімдердің торлық орналасуы (бір қатарда 5 өнім) */
+/* Өнім торы */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 1 қатарда 5 өнім */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Өнім карточкасы */
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.product-card:hover {
+  transform: scale(1.03);
+}
+.product-card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+/* Секция атауы */
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+/* Модаль терезе */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: white;
+  max-width: 600px;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Галерея стилі */
+.main-image-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.main-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.thumbs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.thumbs img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 2px solid transparent;
+}
+
+.thumbs img:hover {
+  transform: scale(1.05);
+  border-color: #007bff;
+}
+
+.product-price {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-description ul {
+  padding-left: 20px;
+}
+
+
+.city-list {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.city-list strong {
+  font-size: 25px;
+}
+
+/* Тақырып (h1) */
+header h1 {
+  padding-left: 70px;     /* ← Сол жақтан отступ */
+  margin-top: 60px;       /* ← Жоғарғы отступ */
+  text-align: left;
+  font-size: 28px;
+}
+
+/* Кіріспе мәтін (p) */
+main p {
+  padding-left: 70px;
+  margin-top: 30px;
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Қалалар тізімі */
+.city-list {
+  padding-left: 70px;
+  margin-top: 20px;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+
+.city-list li {
+  margin-bottom: 17px; /* ← Қала мен нөмір арасындағы аралық */
+  line-height: 1.6;
+}
+
+
+.city-list strong {
+  font-size: 20px;
+}
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.social-links li {
+  margin-bottom: 8px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+.footer-column ul li a {
+  font-size: 22px; /* ← осында қалаған размерді қойыңыз (мысалы: 20px, 22px) */
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.service-centers-container {
+  display: flex;
+  gap: 5px; /* Аралық қалыпты болады */
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.service-text {
+  flex: 1 1 60%;
+  padding-left: 0px; /* Қаласаңыз — қосымша отступ */
+}
+
+.service-map {
+  flex: 1 1 30%;
+  text-align: center;
+  padding-right: 183px; /* 64px орнына — қалыпты мән */
+}
+
+.service-map img {
+  width: 120%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

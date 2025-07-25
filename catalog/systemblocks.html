@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Системные блоки</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+   <nav>
+  <div class="logo">HI-TECH NJM</div>
+  <div class="nav-links">
+    <a href="../index.html">Главная</a>
+
+
+
+    <div class="dropdown">
+      <a href="#catalog" class="dropbtn">Каталог</a>
+      <div class="dropdown-content">
+        <a href="#blocks">Системные блоки</a>
+        <a href="monoblocks.html">Моноблоки</a>
+        <a href="notebooks.html">Ноутбуки</a>
+       <a href="monitors.html">Мониторы</a>
+        <a href="keyboards.html">Клавиатуры</a>
+        <a href="mice.html">Мыши</a>
+       <a href="boards.html">Интерактивные доски</a>
+      </div>
+    </div>
+
+    <a href="../about.html">О компании</a>
+    <a href="../contact.html"> Контакты </a>
+  </div>
+</nav>
+
+ <h2 class="section-title">Системные блоки Hi‑Tech NJM</h2>
+<div class="products-grid">
+
+  <!-- Өнім 1 -->
+  <div class="product-card" onclick="openModal('1')">
+    <img src="../images/sys1.jpeg" alt="NJM" />
+    <h3>NJM N2010</h3>
+    <p>Intel Core i5 / 8GB / 256GB SSD</p>
+  </div>
+
+  <!-- Өнім 2 -->
+  <div class="product-card" onclick="openModal('2')">
+    <img src="../images/sys2.jpeg" alt="NJM" />
+    <h3>NJM N2002</h3>
+    <p>Intel I9 / 64GB / RTX 3050</p>
+  </div>
+
+  <!-- Өнім 3 -->
+  <div class="product-card" onclick="openModal('3')">
+    <img src="../images/sys3.jpg" alt="NJM" />
+    <h3>NJM N2002 </h3>
+    <p>Intel i5 / 32GB /  RTX 3070 </p>
+  </div>
+
+  <!-- Өнім 4 -->
+  <div class="product-card" onclick="openModal('4')">
+    <img src="../images/sys4.jpg" alt="NJM" />
+    <h3>NJM </h3>
+    <p>Core i3 / 4GB / 128GB SSD</p>
+  </div>
+
+  <!-- Өнім 5 -->
+  <div class="product-card" onclick="openModal('5')">
+    <img src="../images/sys5.jpg" alt="NJM" />
+    <h3>NJM </h3>
+    <p>Core i5 / 8GB / GTX 1650</p>
+  </div>
+
+  <!-- Өнім 6 -->
+  <div class="product-card" onclick="openModal('6')">
+    <img src="../images/sys6.jpg" alt="NJM" />
+    <h3>NJM </h3>
+    <p>Ryzen 3 / 8GB / 256GB SSD</p>
+  </div>
+
+  <!-- Өнім 7 -->
+  <div class="product-card" onclick="openModal('7')">
+    <img src="../images/sys7.jpg" alt="NJM" />
+    <h3>NJM </h3>
+    <p>Core i5 / 16GB / 1TB HDD</p>
+  </div>
+
+  <!-- Өнім 8 -->
+  <div class="product-card" onclick="openModal('8')">
+    <img src="../images/sys8.jpg" alt="NJM" />
+    <h3>NJM </h3>
+    <p>Core i9 / 32GB / 1TB SSD</p>
+  </div>
+
+  <!-- Өнім 9 -->
+  <div class="product-card" onclick="openModal('9')">
+    <img src="../images/sys9.jpg" alt="NJM" />
+    <h3>NJM </h3>
+    <p>Ryzen 5 / 8GB / 512GB SSD</p>
+  </div>
+
+  <!-- Өнім 10 -->
+  <div class="product-card" onclick="openModal('10')">
+    <img src="../images/sys10.jpg" alt="NJM" />
+    <h3>NJM </h3>
+    <p>Core i7 / 16GB / RTX 3070</p>
+  </div>
+
+  <!-- Өнім 11 -->
+  <div class="product-card" onclick="openModal('11')">
+    <img src="../images/sys11.jpg" alt="NJM" />
+    <h3>NJM </h3>
+    <p>Core i5 / 8GB / 256GB SSD</p>
+  </div>
+
+  <!-- Өнім 12 -->
+  <div class="product-card" onclick="openModal('12')">
+    <img src="../images/sys12.jpg" alt="NJM" />
+    <h3>NJM </h3>
+    <p>Ryzen 7 / 16GB / RTX 4060</p>
+  </div>
+
+</div>
+
+<!-- Өнім 1 карточкасы -->
+
+<!-- Модаль терезе -->
+<div class="modal" id="modal-1">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('1')">&times;</span>
+
+    <!-- Үлкен сурет -->
+    <div class="main-image-container">
+      <img id="main-image-1" src="../images/sys1.jpeg" class="main-img" />
+    </div>
+
+    <!-- Кішкентай суреттер -->
+    <div class="thumbs">
+      <img src="../images/sys1.jpeg" onclick="changeMainImage('1', '../images/sys1.jpeg')">
+      <img src="../images/sys1_1.jpeg" onclick="changeMainImage('1', '../images/sys1_1.jpeg')">
+      <img src="../images/sys1_2.jpg" onclick="changeMainImage('1', '../images/sys1_2.jpg')">
+      <img src="../images/sys1_3.jpeg" onclick="changeMainImage('1', '../images/sys1_3.jpeg')">
+    </div>
+
+    <!-- Сипаттама -->
+    <div class="modal-description">
+      <ul>
+        <li>Процессор - Intel Core i5-10400</li>
+        <li>Поколение процессора - Intel 10th</li>
+        <li>Количество ядер процессора - 6 ядер</li>
+        <li>Базовая частота процессора - 2900.0 МГц</li>
+        <li>Максимальная частота процессора - 4300.0 МГц</li>
+        <li>Графический процессор - Intel UHD Graphics 630</li>
+        <li>Объем видеопамяти - Общая с оперативной</li>
+        <li>Размер оперативной памяти - 8.0 Гб</li>
+        <li>Частота оперативной памяти - 3200 МГц</li>
+        <li>Тип накопителя - SSD</li>
+        <li>Объем SSD - 256.0 Гб</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<!-- Өнім 2 -->
+<!-- Өнім 2 карточкасы -->
+
+<!-- Модаль терезе -->
+<div class="modal" id="modal-2">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('2')">&times;</span>
+
+    <!-- Үлкен сурет -->
+    <div class="main-image-container">
+      <img id="main-image-2" src="../images/sys2.jpeg" class="main-img" />
+    </div>
+
+    <!-- Кішкентай суреттер -->
+    <div class="thumbs">
+      <img src="../images/sys2.jpeg" onclick="changeMainImage('2', '../images/sys2.jpeg')">
+      <img src="../images/sys2_1.jpeg" onclick="changeMainImage('2', '../images/sys2_1.jpeg')">
+      <img src="../images/sys2_2.jpg" onclick="changeMainImage('2', '../images/sys2_2.jpg')">
+      <img src="../images/sys2_3.jpg" onclick="changeMainImage('2', '../images/sys2_3.jpg')">
+    </div>
+
+
+
+    <!-- Сипаттама -->
+    <div class="modal-description">
+      <ul>
+        <li>Процессор - Intel Core i9-14900kf</li>
+        <li>Поколение процессора - Intel 14th</li>
+        <li>Количество ядер процессора - 24 ядер</li>
+        <li>Базовая частота процессора - 3200.0 МГц</li>
+        <li>Максимальная частота процессора - 6000.0 МГц</li>
+        <li>Графический процессор - NVIDIA GeForce RTX 3050</li>
+        <li>Объем видеопамяти - 8 Гб</li>
+        <li>Размер оперативной памяти - 64 Гб</li>
+         <li>Частота оперативной памяти - 5600.0 МГц</li>
+         <li>Тип накопителя - M.2 NVMe SSD 256 ГБ</li>
+         <li>HDD SATA 7200 об/мин форм-фактор 3,5” - объем 1 ТБ</li>
+         <li>Форм-фактор корпуса Full-Tower</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Өнім 3 карточкасы -->
+
+<!-- Модаль терезе -->
+<div class="modal" id="modal-3">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('3')">&times;</span>
+
+    <!-- Үлкен сурет -->
+    <div class="main-image-container">
+      <img id="main-image-3" src="../images/sys3.jpg" class="main-img" />
+    </div>
+
+    <!-- Кішкентай суреттер -->
+    <div class="thumbs">
+      <img src="../images/sys3.jpg" onclick="changeMainImage('3', '../images/sys3.jpg')">
+      <img src="../images/sys3_1.jpg" onclick="changeMainImage('3', '../images/sys3_1.jpg')">
+      <img src="../images/sys3_2.jpg" onclick="changeMainImage('3', '../images/sys3_2.jpg')">
+      <img src="../images/sys3_3.jpg" onclick="changeMainImage('3', '../images/sys3_3.jpg')">
+    </div>
+
+
+    <!-- Сипаттама -->
+    <div class="modal-description">
+      <ul>
+        <li>Процессор - Intel Core i5-12500</li>
+        <li>Поколение процессора - Intel 12th</li>
+        <li>Количество ядер процессора - 6 ядер</li>
+        <li>Базовая частота процессора - 3000.0 МГц</li>
+        <li>Максимальная частота процессора - 4600.0 МГц</li>
+        <li>Графический процессор -NVIDIA GeForce RTX 3070</li>
+        <li>Объем видеопамяти - 8 ГБ</li>
+        <li>Размер оперативной памяти - 32 Гб</li>
+        <li>Частота оперативной памяти - 3200.0 МГц</li>
+        <li>Тип накопителя - SSD</li>
+        <li>Объем SSD - 1024.0 Гб</li>
+         <li>Форм-фактор корпуса Micro-Tower</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+   <!-- Өнім 4 карточкасы -->
+
+<!-- Модаль терезе -->
+<div class="modal" id="modal-4">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('4')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-4" src="../images/sys4.jpg" class="main-img" />
+    </div>
+    <div class="thumbs">
+      <img src="../images/sys4.jpg" onclick="changeMainImage('4', '../images/sys4.jpg')">
+      <img src="../images/sys4_1.jpg" onclick="changeMainImage('4', '../images/sys4_1.jpg')">
+      <img src="../images/sys4_2.jpg" onclick="changeMainImage('4', '../images/sys4_2.jpg')">
+      <img src="../images/sys4_3.jpg" onclick="changeMainImage('4', '../images/sys4_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Цена:</strong> 190 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Intel Core i3-10100</li>
+        <li>4 ядра, 8 потоков</li>
+        <li>3.6 - 4.3 ГГц</li>
+        <li>4GB RAM DDR4</li>
+        <li>128GB SSD</li>
+        <li>Intel UHD Graphics 630</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Өнім 5 карточкасы -->
+
+<div class="modal" id="modal-5">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('5')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-5" src="../images/sys5.jpg" class="main-img" />
+    </div>
+    <div class="thumbs">
+      <img src="../images/sys5.jpg" onclick="changeMainImage('5', '../images/sys5.jpg')">
+      <img src="../images/sys5_1.jpg" onclick="changeMainImage('5', '../images/sys5_1.jpg')">
+      <img src="../images/sys5_2.jpg" onclick="changeMainImage('5', '../images/sys5_2.jpg')">
+      <img src="../images/sys5_3.jpg" onclick="changeMainImage('5', '../images/sys5_3.jpg')">
+    </div>
+    <div class="modal-description">
+      <ul>
+        <li>Intel Core i5-10400F</li>
+        <li>6 ядер / 12 потоков</li>
+        <li>8GB DDR4</li>
+        <li>SSD 512GB</li>
+        <li>NVIDIA GTX 1650, 4GB</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Өнім 6 карточкасы -->
+
+<div class="modal" id="modal-6">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('6')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-6" src="../images/sys6.jpg" class="main-img" />
+    </div>
+    <div class="thumbs">
+      <img src="../images/sys6.jpg" onclick="changeMainImage('6', '../images/sys6.jpg')">
+      <img src="../images/sys6_1.jpg" onclick="changeMainImage('6', '../images/sys6_1.jpg')">
+      <img src="../images/sys6_2.jpg" onclick="changeMainImage('6', '../images/sys6_2.jpg')">
+      <img src="../images/sys6_3.jpg" onclick="changeMainImage('6', '../images/sys6_3.jpg')">
+    </div>
+    <div class="modal-description">
+      <ul>
+        <li>AMD Ryzen 3 3200G</li>
+        <li>4 ядра / 4 потока</li>
+        <li>3.6 - 4.0 ГГц</li>
+        <li>8GB DDR4 RAM</li>
+        <li>256GB SSD</li>
+        <li>Radeon Vega 8 Graphics</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Өнім 7 карточкасы -->
+
+<div class="modal" id="modal-7">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('7')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-7" src="../images/sys7.jpg" class="main-img" />
+    </div>
+    <div class="thumbs">
+      <img src="../images/sys7.jpg" onclick="changeMainImage('7', '../images/sys7.jpg')">
+      <img src="../images/sys7_1.jpg" onclick="changeMainImage('7', '../images/sys7_1.jpg')">
+      <img src="../images/sys7_2.jpg" onclick="changeMainImage('7', '../images/sys7_2.jpg')">
+      <img src="../images/sys7_3.jpg" onclick="changeMainImage('7', '../images/sys7_3.jpg')">
+    </div>
+    <div class="modal-description">
+      <ul>
+        <li>Intel Core i5-10400</li>
+        <li>6 ядер / 12 потоков</li>
+        <li>2.9 - 4.3 ГГц</li>
+        <li>16GB DDR4 RAM</li>
+        <li>1TB HDD</li>
+        <li>Intel UHD Graphics 630</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Өнім 8 карточкасы -->
+
+<div class="modal" id="modal-8">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('8')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-8" src="../images/sys8.jpg" class="main-img" />
+    </div>
+    <div class="thumbs">
+      <img src="../images/sys8.jpg" onclick="changeMainImage('8', '../images/sys8.jpg')">
+      <img src="../images/sys8_1.jpg" onclick="changeMainImage('8', '../images/sys8_1.jpg')">
+      <img src="../images/sys8_2.jpg" onclick="changeMainImage('8', '../images/sys8_2.jpg')">
+      <img src="../images/sys8_3.jpg" onclick="changeMainImage('8', '../images/sys8_3.jpg')">
+    </div>
+    <div class="modal-description">
+      <ul>
+        <li>Intel Core i9-12900K</li>
+        <li>16 ядер / 24 потока</li>
+        <li>3.2 - 5.2 ГГц</li>
+        <li>32GB DDR5 RAM</li>
+        <li>1TB NVMe SSD</li>
+        <li>NVIDIA RTX 3080</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Өнім 9 карточкасы -->
+
+<div class="modal" id="modal-9">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('9')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-9" src="../images/sys9.jpg" class="main-img" />
+    </div>
+    <div class="thumbs">
+      <img src="../images/sys9.jpg" onclick="changeMainImage('9', '../images/sys9.jpg')">
+      <img src="../images/sys9_1.jpg" onclick="changeMainImage('9', '../images/sys9_1.jpg')">
+      <img src="../images/sys9_2.jpg" onclick="changeMainImage('9', '../images/sys9_2.jpg')">
+      <img src="../images/sys9_3.jpg" onclick="changeMainImage('9', '../images/sys9_3.jpg')">
+    </div>
+    <div class="modal-description">
+      <ul>
+        <li>AMD Ryzen 5 5600G</li>
+        <li>6 ядер / 12 потоков</li>
+        <li>3.9 - 4.4 ГГц</li>
+        <li>8GB DDR4 RAM</li>
+        <li>512GB SSD</li>
+        <li>Vega Graphics</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Өнім 10 карточкасы -->
+<div class="modal" id="modal-10">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('10')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-10" src="../images/sys10.jpg" class="main-img" />
+    </div>
+    <div class="thumbs">
+      <img src="../images/sys10.jpg" onclick="changeMainImage('10', '../images/sys10.jpg')">
+      <img src="../images/sys10_1.jpeg" onclick="changeMainImage('10', '../images/sys10_1.jpeg')">
+      <img src="../images/sys10_2.jpeg" onclick="changeMainImage('10', '../images/sys10_2.jpeg')">
+      <img src="../images/sys10_3.jpg" onclick="changeMainImage('10', '../images/sys10_3.jpg')">
+    </div>
+    <div class="modal-description">
+      <ul>
+        <li>Intel Core i7-12700F</li>
+        <li>12 ядер / 20 потоков</li>
+        <li>2.1 - 4.9 ГГц</li>
+        <li>16GB DDR4 RAM</li>
+        <li>512GB SSD</li>
+        <li>NVIDIA RTX 3070</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Өнім 11 карточкасы -->
+
+<div class="modal" id="modal-11">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('11')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-11" src="../images/sys11.jpg" class="main-img" />
+    </div>
+    <div class="thumbs">
+      <img src="../images/sys11.jpg" onclick="changeMainImage('11', '../images/sys11.jpg')">
+      <img src="../images/sys11_1.jpg" onclick="changeMainImage('11', '../images/sys11_1.jpg')">
+      <img src="../images/sys11_2.jpg" onclick="changeMainImage('11', '../images/sys11_2.jpg')">
+      <img src="../images/sys11_3.jpg" onclick="changeMainImage('11', '../images/sys11_3.jpg')">
+    </div>
+    <div class="modal-description">
+      <ul>
+        <li>Intel Core i5-10400</li>
+        <li>6 ядер / 12 потоков</li>
+        <li>2.9 - 4.3 ГГц</li>
+        <li>8GB DDR4 RAM</li>
+        <li>256GB SSD</li>
+        <li>Intel UHD Graphics 630</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Өнім 12 карточкасы -->
+
+<div class="modal" id="modal-12">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('12')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-12" src="../images/sys12.jpg" class="main-img" />
+    </div>
+    <div class="thumbs">
+      <img src="../images/sys12.jpg" onclick="changeMainImage('12', '../images/sys12.jpg')">
+      <img src="../images/sys12_1.jpg" onclick="changeMainImage('12', '../images/sys12_1.jpg')">
+      <img src="../images/sys12_2.jpg" onclick="changeMainImage('12', '../images/sys12_2.jpg')">
+      <img src="../images/sys12_3.jpg" onclick="changeMainImage('12', '../images/sys12_3.jpg')">
+    </div>
+    <div class="modal-description">
+      <ul>
+        <li>AMD Ryzen 7 5800X</li>
+        <li>8 ядер / 16 потоков</li>
+        <li>3.8 - 4.7 ГГц</li>
+        <li>16GB DDR4 RAM</li>
+        <li>512GB NVMe SSD</li>
+        <li>NVIDIA RTX 4060</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal(id) {
+  document.getElementById('modal-' + id).style.display = 'block';
+}
+
+function closeModal(id) {
+  document.getElementById('modal-' + id).style.display = 'none';
+}
+
+function changeMainImage(id, src) {
+  document.getElementById('main-image-' + id).src = src;
+}
+</script>
+
+</body>
+</html>

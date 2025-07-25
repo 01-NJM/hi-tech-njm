@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Клавиатуры</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+  <nav>
+    <div class="logo">HI-TECH NJM</div>
+    <div class="nav-links">
+      <a href="../index.html">Главная</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Каталог</a>
+        <div class="dropdown-content">
+          <a href="systemblocks.html">Системные блоки</a>
+          <a href="monoblocks.html">Моноблоки</a>
+          <a href="notebooks.html">Ноутбуки</a>
+          <a href="monitors.html">Мониторы</a>
+          <a href="keyboards.html">Клавиатуры</a>
+          <a href="mice.html">Мыши</a>
+          <a href="boards.html">Интерактивные доски</a>
+        </div>
+      </div>
+      <a href="../about.html">О компании</a>
+      <a href="../contact.html"> Контакты </a>
+    </div>
+  </nav>
+
+  <h2 class="section-title">Клавиатуры Hi‑Tech NJM</h2>
+<div class="products-grid">
+  <div class="product-card" onclick="openModal('k1')">
+    <img src="../images/keyboard1.jpeg" alt="Клавиатура 1">
+    <h3>Клавиатура NJM </h3>
+    <p>Механическая / RGB / USB</p>
+  </div>
+
+  <div class="product-card" onclick="openModal('k2')">
+    <img src="../images/keyboard2.jpg" alt="Клавиатура 2">
+    <h3>Клавиатура NJM 2</h3>
+    <p>Мембранная / Беспроводная</p>
+  </div>
+
+  <div class="product-card" onclick="openModal('k3')">
+    <img src="../images/keyboard3.jpg" alt="Клавиатура 3">
+    <h3>Клавиатура NJM 3</h3>
+    <p>Беспроводная / Bluetooth / Аккумулятор</p>
+  </div>
+
+  <div class="product-card" onclick="openModal('k4')">
+    <img src="../images/keyboard4.jpg" alt="Клавиатура 4">
+    <h3>Клавиатура NJM 4</h3>
+    <p>Механическая / Подсветка / USB-C</p>
+  </div>
+
+  <div class="product-card" onclick="openModal('k5')">
+    <img src="../images/keyboard5.jpg" alt="Клавиатура 5">
+    <h3>Клавиатура NJM 5</h3>
+    <p>Компактная / Беспроводная / Чёрная</p>
+  </div>
+</div>
+
+
+  <!-- Модаль терезелер төменде орналасады -->
+  <div class="modal" id="modal-k1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('k1')">&times;</span>
+      <div class="main-image-container">
+        <img id="main-image-k1" src="../images/keyboard1.jpeg" class="main-img">
+      </div>
+      <div class="thumbs">
+        <img src="../images/keyboard1.jpeg" onclick="changeMainImage('k1', '../images/keyboard1.jpeg')">
+        <img src="../images/keyboard1_1.jpg" onclick="changeMainImage('k1', '../images/keyboard1_1.jpg')">
+        <img src="../images/keyboard1_2.jpg" onclick="changeMainImage('k1', '../images/keyboard1_2.jpg')">
+        <img src="../images/keyboard1_3.jpg" onclick="changeMainImage('k1', '../images/keyboard1_3.jpg')">
+      </div>
+      <p class="product-price"><strong>Бағасы:</strong> 25 000 ₸</p>
+      <div class="modal-description">
+        <ul>
+          <li>Тип: Механическая</li>
+          <li>Подсветка: RGB</li>
+          <li>Подключение: USB</li>
+          <li>Количество клавиш: 104</li>
+          <li>Совместимость: Windows / macOS</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-k2">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('k2')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-k2" src="../images/keyboard2.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/keyboard2.jpg" onclick="changeMainImage('k2', '../images/keyboard2.jpg')">
+      <img src="../images/keyboard2_1.jpg" onclick="changeMainImage('k2', '../images/keyboard2_1.jpg')">
+      <img src="../images/keyboard2_2.jpg" onclick="changeMainImage('k2', '../images/keyboard2_2.jpg')">
+      <img src="../images/keyboard2_3.jpg" onclick="changeMainImage('k2', '../images/keyboard2_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 18 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Тип: Мембранная</li>
+        <li>Подключение: Беспроводное</li>
+        <li>Интерфейс: USB ресивер</li>
+        <li>Питание: 2x AAA батарейки</li>
+        <li>Цвет: Чёрный</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-k3">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('k3')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-k3" src="../images/keyboard3.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/keyboard3.jpg" onclick="changeMainImage('k3', '../images/keyboard3.jpg')">
+      <img src="../images/keyboard3_1.jpg" onclick="changeMainImage('k3', '../images/keyboard3_1.jpg')">
+      <img src="../images/keyboard3_2.jpg" onclick="changeMainImage('k3', '../images/keyboard3_2.jpg')">
+      <img src="../images/keyboard3_3.jpg" onclick="changeMainImage('k3', '../images/keyboard3_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 22 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Тип: Беспроводная</li>
+        <li>Интерфейс: Bluetooth</li>
+        <li>Аккумулятор: 1200 мАч</li>
+        <li>Материал: Пластик</li>
+        <li>Цвет: Серый</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-k4">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('k4')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-k4" src="../images/keyboard4.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/keyboard4.jpg" onclick="changeMainImage('k4', '../images/keyboard4.jpg')">
+      <img src="../images/keyboard4_1.jpg" onclick="changeMainImage('k4', '../images/keyboard4_1.jpg')">
+      <img src="../images/keyboard4_2.jpg" onclick="changeMainImage('k4', '../images/keyboard4_2.jpg')">
+      <img src="../images/keyboard4_3.jpg" onclick="changeMainImage('k4', '../images/keyboard4_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 28 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Тип: Механическая</li>
+        <li>Интерфейс: USB-C</li>
+        <li>Подсветка: Многоцветная</li>
+        <li>Материал корпуса: Металл</li>
+        <li>Клавиши: Anti-Ghosting</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="modal" id="modal-k5">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('k5')">&times;</span>
+    <div class="main-image-container">
+      <img id="main-image-k5" src="../images/keyboard5.jpg" class="main-img">
+    </div>
+    <div class="thumbs">
+      <img src="../images/keyboard5.jpg" onclick="changeMainImage('k5', '../images/keyboard5.jpg')">
+      <img src="../images/keyboard5_1.jpg" onclick="changeMainImage('k5', '../images/keyboard5_1.jpg')">
+      <img src="../images/keyboard5_2.jpg" onclick="changeMainImage('k5', '../images/keyboard5_2.jpg')">
+      <img src="../images/keyboard5_3.jpg" onclick="changeMainImage('k5', '../images/keyboard5_3.jpg')">
+    </div>
+    <p class="product-price"><strong>Бағасы:</strong> 19 000 ₸</p>
+    <div class="modal-description">
+      <ul>
+        <li>Тип: Компактная</li>
+        <li>Подключение: Беспроводное</li>
+        <li>Цвет: Чёрный</li>
+        <li>Совместимость: Windows / Android</li>
+        <li>Вес: 450 г</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <script>
+    function openModal(id) {
+      document.getElementById('modal-' + id).style.display = 'block';
+    }
+    function closeModal(id) {
+      document.getElementById('modal-' + id).style.display = 'none';
+    }
+    function changeMainImage(id, src) {
+      document.getElementById('main-image-' + id).src = src;
+    }
+  </script>
+</body>
+</html>

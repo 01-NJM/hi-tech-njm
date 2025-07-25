@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Мыши</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <nav>
+    <div class="logo">HI-TECH NJM</div>
+    <div class="nav-links">
+      <a href="../index.html">Главная</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Каталог</a>
+        <div class="dropdown-content">
+          <a href="systemblocks.html">Системные блоки</a>
+          <a href="monoblocks.html">Моноблоки</a>
+          <a href="notebooks.html">Ноутбуки</a>
+          <a href="monitors.html">Мониторы</a>
+          <a href="keyboards.html">Клавиатуры</a>
+          <a href="mice.html">Мыши</a>
+          <a href="boards.html">Интерактивные доски</a>
+        </div>
+      </div>
+      <a href="../about.html">О компании</a>
+      <a href="../contact.html"> Контакты </a>
+    </div>
+  </nav>
+
+  <h2 class="section-title">Мыши Hi‑Tech NJM</h2>
+  <div class="products-grid">
+    <div class="product-card" onclick="openModal('msh1')">
+      <img src="../images/mouse1.jpeg" alt="Мышь 1">
+      <h3>Мышь NJM </h3>
+      <p>Беспроводная / 1600 DPI</p>
+    </div>
+    <div class="product-card" onclick="openModal('msh2')">
+      <img src="../images/mouse2.jpg" alt="Мышь 2">
+      <h3>Мышь NJM </h3>
+      <p>Проводная / RGB / Игровая</p>
+    </div>
+    <div class="product-card" onclick="openModal('msh3')">
+      <img src="../images/mouse3.jpg" alt="Мышь 3">
+      <h3>Мышь NJM </h3>
+      <p>Bluetooth / Сенсорная</p>
+    </div>
+    <div class="product-card" onclick="openModal('msh4')">
+      <img src="../images/mouse4.jpg" alt="Мышь 4">
+      <h3>Мышь NJM </h3>
+      <p>Проводная / 2400 DPI</p>
+    </div>
+    <div class="product-card" onclick="openModal('msh5')">
+      <img src="../images/mouse5.jpg" alt="Мышь 5">
+      <h3>Мышь NJM </h3>
+      <p>Вертикальная / USB</p>
+    </div>
+  </div>
+
+  <!-- Модали для каждой мыши -->
+  <div class="modal" id="modal-msh1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('msh1')">&times;</span>
+      <div class="main-image-container">
+        <img id="main-image-msh1" src="../images/mouse1.jpeg" class="main-img">
+      </div>
+      <div class="thumbs">
+        <img src="../images/mouse1.jpeg" onclick="changeMainImage('msh1', '../images/mouse1.jpeg')">
+        <img src="../images/mouse1_1.jpg" onclick="changeMainImage('msh1', '../images/mouse1_1.jpg')">
+        <img src="../images/mouse1_2.jpg" onclick="changeMainImage('msh1', '../images/mouse1_2.jpg')">
+        <img src="../images/mouse1_3.jpg" onclick="changeMainImage('msh1', '../images/mouse1_3.jpg')">
+      </div>
+      <p class="product-price"><strong>Бағасы:</strong> 7 000 ₸</p>
+      <div class="modal-description">
+        <ul>
+          <li>Тип: Беспроводная</li>
+          <li>DPI: 1600</li>
+          <li>Интерфейс: USB-ресивер</li>
+          <li>Совместимость: Windows, macOS</li>
+          <li>Цвет: Черный</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-msh2">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('msh2')">&times;</span>
+      <div class="main-image-container">
+        <img id="main-image-msh2" src="../images/mouse2.jpg" class="main-img">
+      </div>
+      <div class="thumbs">
+        <img src="../images/mouse2.jpg" onclick="changeMainImage('msh2', '../images/mouse2.jpg')">
+        <img src="../images/mouse2_1.jpg" onclick="changeMainImage('msh2', '../images/mouse2_1.jpg')">
+        <img src="../images/mouse2_2.jpg" onclick="changeMainImage('msh2', '../images/mouse2_2.jpg')">
+        <img src="../images/mouse2_3.jpg" onclick="changeMainImage('msh2', '../images/mouse2_3.jpg')">
+      </div>
+      <p class="product-price"><strong>Бағасы:</strong> 10 500 ₸</p>
+      <div class="modal-description">
+        <ul>
+          <li>Тип: Игровая</li>
+          <li>DPI: До 7200</li>
+          <li>Подсветка: RGB</li>
+          <li>Интерфейс: USB</li>
+          <li>Кнопки: 7 программируемых</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-msh3">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('msh3')">&times;</span>
+      <div class="main-image-container">
+        <img id="main-image-msh3" src="../images/mouse3.jpg" class="main-img">
+      </div>
+      <div class="thumbs">
+        <img src="../images/mouse3.jpg" onclick="changeMainImage('msh3', '../images/mouse3.jpg')">
+        <img src="../images/mouse3_1.jpg" onclick="changeMainImage('msh3', '../images/mouse3_1.jpg')">
+        <img src="../images/mouse3_2.jpg" onclick="changeMainImage('msh3', '../images/mouse3_2.jpg')">
+        <img src="../images/mouse3_3.jpg" onclick="changeMainImage('msh3', '../images/mouse3_3.jpg')">
+      </div>
+      <p class="product-price"><strong>Бағасы:</strong> 8 500 ₸</p>
+      <div class="modal-description">
+        <ul>
+          <li>Тип: Сенсорная</li>
+          <li>Подключение: Bluetooth</li>
+          <li>Работа: До 30 дней на зарядке</li>
+          <li>Совместимость: iOS, Android, Windows</li>
+          <li>Вес: 75 г</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-msh4">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('msh4')">&times;</span>
+      <div class="main-image-container">
+        <img id="main-image-msh4" src="../images/mouse4.jpg" class="main-img">
+      </div>
+      <div class="thumbs">
+        <img src="../images/mouse4.jpg" onclick="changeMainImage('msh4', '../images/mouse4.jpg')">
+        <img src="../images/mouse4_1.jpg" onclick="changeMainImage('msh4', '../images/mouse4_1.jpg')">
+        <img src="../images/mouse4_2.jpg" onclick="changeMainImage('msh4', '../images/mouse4_2.jpg')">
+        <img src="../images/mouse4_3.jpg" onclick="changeMainImage('msh4', '../images/mouse4_3.jpg')">
+      </div>
+      <p class="product-price"><strong>Бағасы:</strong> 5 900 ₸</p>
+      <div class="modal-description">
+        <ul>
+          <li>Тип: Проводная</li>
+          <li>DPI: 2400</li>
+          <li>Интерфейс: USB</li>
+          <li>Цвет: Черно-красный</li>
+          <li>Назначение: Офис/Гейминг</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-msh5">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('msh5')">&times;</span>
+      <div class="main-image-container">
+        <img id="main-image-msh5" src="../images/mouse5.jpg" class="main-img">
+      </div>
+      <div class="thumbs">
+        <img src="../images/mouse5.jpg" onclick="changeMainImage('msh5', '../images/mouse5.jpg')">
+        <img src="../images/mouse5_1.jpg" onclick="changeMainImage('msh5', '../images/mouse5_1.jpg')">
+        <img src="../images/mouse5_2.jpg" onclick="changeMainImage('msh5', '../images/mouse5_2.jpg')">
+        <img src="../images/mouse5_3.jpg" onclick="changeMainImage('msh5', '../images/mouse5_3.jpg')">
+      </div>
+      <p class="product-price"><strong>Бағасы:</strong> 6 800 ₸</p>
+      <div class="modal-description">
+        <ul>
+          <li>Тип: Эргономичная (вертикальная)</li>
+          <li>Подключение: USB</li>
+          <li>Для кого: Правша</li>
+          <li>DPI: 1600</li>
+          <li>Назначение: Работа с графикой</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById('modal-' + id).style.display = 'block';
+    }
+    function closeModal(id) {
+      document.getElementById('modal-' + id).style.display = 'none';
+    }
+    function changeMainImage(id, src) {
+      document.getElementById('main-image-' + id).src = src;
+    }
+  </script>
+</body>
+</html>
