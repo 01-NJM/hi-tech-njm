@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Персональный компьютер</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+  <nav>
+    <div class="logo">HI-TECH NJM</div>
+    <div class="nav-links">
+      <a href="../index.html">Главная</a>
+      <div class="dropdown">
+        <a href="#" class="dropbtn">Каталог</a>
+        <div class="dropdown-content">
+          <a href="systemblocks.html">Системные блоки</a>
+          <a href="monoblocks.html">Моноблоки</a>
+          <a href="notebooks.html">Ноутбуки</a>
+          <a href="monitors.html">Мониторы</a>
+          <a href="keyboards.html">Клавиатуры</a>
+          <a href="mice.html">Мыши</a>
+          <a href="boards.html">Интерактивные доски</a>
+          <a href="personcom.html">Персональный компьютер</a>
+        </div>
+      </div>
+      <a href="../about.html">О компании</a>
+      <a href="../contact.html"> Контакты </a>
+    </div>
+  </nav>
+
+  <h2 class="section-title">Персональный компьютер Hi‑Tech NJM</h2>
+  <div class="products-grid">
+    <div class="product-card" onclick="openModal('bd1')">
+      <img src="../images/mono6.png" alt="Персональный компьютер">
+      <h3>Персональный компьютер NJM N200</h3>
+      <p>Intel i5/16gb/512gb SSD</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-bd1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('bd1')">&times;</span>
+      <div class="main-image-container">
+        <img id="main-image-bd1" src="../images/mono6.png" class="main-img">
+      </div>
+      <div class="thumbs">
+        <img src="../images/mono6.png" onclick="changeMainImage('bd1', '../images/mono6.png')">
+        <img src="../images/mono1.png" onclick="changeMainImage('bd1', '../images/mono1.png')">
+        <img src="../images/mouse1.jpeg" onclick="changeMainImage('bd1', '../images/mouse1.jpeg')">
+        <img src="../images/keyboard1.jpeg" onclick="changeMainImage('bd1', '../images/keyboard1.jpeg')">
+      </div>
+      <p class="product-price"><strong></strong></p>
+      <div class="modal-description">
+        <ul>
+          <li>Процессор : Intel core i5 12600 </li>
+             <li>Материнская плата : H610 </li>
+            <li>Оперативная память : 16 GB </li>
+            <li>SSD : 512 GB </li>
+            <li>dwd-опционально </li>
+            <li>Дисплей :  27 дюйм </li>
+            <li> в комплекте с клавиатурой и мышью </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById('modal-' + id).style.display = 'block';
+    }
+    function closeModal(id) {
+      document.getElementById('modal-' + id).style.display = 'none';
+    }
+    function changeMainImage(id, src) {
+      document.getElementById('main-image-' + id).src = src;
+    }
+  </script>
+</body>
+</html>
